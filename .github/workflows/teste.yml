@@ -1,6 +1,9 @@
 name: agora tenho nome
 
-on: [push, pull_request]
+on:
+  pull_request:
+    types:
+      - closed
 
 jobs:
   job-linux:
