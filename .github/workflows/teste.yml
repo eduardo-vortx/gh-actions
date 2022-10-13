@@ -8,3 +8,9 @@ jobs:
     steps:
       - name: listar arquivos
         run: ls
+
+      - name: Checkout
+        uses: actions/checkout@v2.5.0
+
+      - name: listar arquivos novamente
+        run: ls
