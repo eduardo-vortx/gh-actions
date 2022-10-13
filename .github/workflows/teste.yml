@@ -1,3 +1,5 @@
+name: agora tenho nome
+
 on: push
 
 jobs:
