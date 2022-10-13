@@ -2,17 +2,9 @@ name: agora tenho nome
 
 on: push
 
-env:
-  MINHA_ENV: valor que a gente quiser
-
 jobs:
   job-linux:
-    env:
-      JOB_ENV: 1
     runs-on: ubuntu-latest
     steps:
-      - name: com python
-        shell: python
-        run: |
-          print("Hello python")
-          print(1 + 4)
+      - name: listar arquivos
+        run: ls
