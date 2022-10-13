@@ -10,6 +10,7 @@ jobs:
         run: echo "Hello World"
   
   job-windows:
+    needs: [job-linux]
     runs-on: windows-latest
     steps:
       - name: ola powershell
