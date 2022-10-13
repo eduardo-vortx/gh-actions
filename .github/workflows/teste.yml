@@ -1,9 +1,6 @@
 name: agora tenho nome
 
-on:
-  pull_request:
-    types:
-      - closed
+on: push
 
 jobs:
   job-linux:
@@ -11,3 +8,9 @@ jobs:
     steps:
       - name: meu step
         run: echo "Hello World"
+  
+  job-windows:
+    runs-on: windows-latest
+    steps:
+      - name: ola powershell
+        run: Write-Host 'Hello pwsh'
