@@ -1,0 +1,26 @@
+{
+  "name": "gh-actions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eduardo-vortx/gh-actions.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eduardo-vortx/gh-actions/issues"
+  },
+  "homepage": "https://github.com/eduardo-vortx/gh-actions#readme",
+  "devDependencies": {
+    "ava": "^4.3.3"
+  }
+}
