@@ -11,9 +11,8 @@ jobs:
       JOB_ENV: 1
     runs-on: ubuntu-latest
     steps:
-      - name: meu step
+      - name: com python
+        shell: python
         run: |
-          node -v
-          npm -v
-          python -v
-          git --version
+          print("Hello python")
+          print(1 + 4)
