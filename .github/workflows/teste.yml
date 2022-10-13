@@ -2,16 +2,19 @@ name: agora tenho nome
 
 on: push
 
+env:
+  MINHA_ENV: valor que a gente quiser
+
 jobs:
   job-linux:
+    env:
+      JOB_ENV: 1
     runs-on: ubuntu-latest
     steps:
       - name: meu step
-        run: echo "Hello World"
-  
-  job-windows:
-    needs: [job-linux]
-    runs-on: windows-latest
-    steps:
-      - name: ola powershell
-        run: Write-Host 'Hello pwsh'
+        env: 
+          STEP_ENV: 2
+        run: |
+          echo $MINHA_ENV
+          echo $JOB_ENV
+          echo $STEP_ENV
