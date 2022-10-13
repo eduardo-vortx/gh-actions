@@ -14,3 +14,9 @@ jobs:
 
       - name: listar arquivos novamente
         run: ls
+
+      - name: instala as dependencias
+        run: npm ci
+
+      - name: executa os testes
+        run: npm test
